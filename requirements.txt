@@ -9,4 +9,5 @@ werkzeug==3.0.2
 zipp==3.18.1
 Flask-Session==0.5.0
 Flask-SQLAlchemy==2.5.1
+passlib==1.7.4
 gunicorn
