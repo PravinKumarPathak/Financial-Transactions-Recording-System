@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            body {
+                background: linear-gradient(to right, #f6d365, #fda085);
+                color: #333;
+            }
+
+            .container {
+                border: 2px solid #f6d365;
+                border-radius: 15px;
+                padding: 20px;
+                margin: 20px auto;
+                background-color: white;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            .form-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h2 class="text-center">Register</h2>
+
+        <div>
+        {% for message in get_flashed_messages() %}
+            <div class="alert alert-danger" role="alert">
+                {{message}}
+            </div>
+        {% endfor %}
+        </div>
+        <br>
+
+        <form method="POST" action="{{url_for('register')}}">
+            <label for="email">Email</label>
+            <div>
+                <input type="email" name="email" id="email" placeholder="enter your email" required>
+            </div>
+            <br>
+            <label for="password">Password</label>
+            <div>
+                <input type="password" name="password" id="password" placeholder="enter your password" required>
+            </div>
+            <br>
+            <div>
+                <input class="btn btn-success" type="submit" value="Register">
+            </div>
+        </form>
+    </body>
+</html>
