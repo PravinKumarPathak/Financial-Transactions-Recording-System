@@ -11,4 +11,4 @@ The application has different web pages =>
    
 3. The third page is Edit Transaction which is user navigated to upon clicking the edit entry option. On this page also, the date and amount are accepted as entries; however, these entries are then reflected against the ID that was being edited.
 
-### Project Application: [Link](https://financial-transactions-recording-system.onrender.com)
+### Project Application: [Link](https://financial-transaction-recording-system.onrender.com)
